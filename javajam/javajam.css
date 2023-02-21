@@ -3,12 +3,23 @@
 
 body{
     background-color:#FCEBB6;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #221811;
     font-family: Tahoma, Arial, sans-serif;
 }
 
+main{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
 #wrapper{
-    width: 80%;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: #FEFAEB;
     background-color: #FEFAEB;
     margin-right: auto;
     margin-left: auto;
@@ -18,6 +29,9 @@ header{
     color: #8C3826;
     background-color: #d28ca3;
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
 }
 
 h1{
@@ -29,12 +43,46 @@ h2{
     color:#8C3826;
 }
 
+h3{
+    color:#8C3826;
+}
+
+h4{
+background-color: #D2B48C;
+font-size: 1.2em;
+padding-left: .5em;
+padding-bottom: .25em;
+}
+
+details{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+homehero{
+    height: 300px;
+    
+}
+
+img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+dt{
+    color: #8C3826
+}
+
 nav{
     text-align: center;
     font-weight: bold;
 }
+nav a { text-decoration: none; }
 
 footer{
+    padding: 1em;
+    border-top-style: solid;
+    border-top-color: #8C3826;
+    border-top-width: 2px;
     background-color: #D2B48C;
     font-size: .60em;
     font-style: italic;
