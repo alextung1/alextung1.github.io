@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -14,13 +14,21 @@ body{
 
 #wrapper{
     background-color: #FEFAEB;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 3px 3px 3px #676767;
     padding: 0;
 
 }
 
 header{
-    color: #D2B48C;
+    background-color: #D2B48C;
     background-image: url("images/cup.jpg");
+    background-repeat: no-repeat;
+    color:#231814;
     padding-left: 105px;
     height: 128px;
     text-align: center;
@@ -70,22 +78,11 @@ border-bottom: 1px solid #221811;
 clear: left;
 }
 
-
-
-main ul{
-    padding-left: 2em;
-}
-
-h3, h3, h4, p, div, dl{
-    padding-left: 1em;
-    padding-right: 1em;
-
-} 
-
 nav {
 	text-align: center;
 	font-size: 1.5em;
 }
+
 
 nav a {
 	text-decoration: none;
@@ -119,15 +116,45 @@ nav li {
 }
 
 main{
-    padding-left: 2em;
+    background-color: #FEF6C2;
+    display: block;
+    padding: 0 0 2em 0;
+}
+
+
+
+main h2,
+h3, 
+h3, 
+h4, 
+p, 
+div,
+ul, 
+dl{
+    padding-left: 3em;
     padding-right: 2em;
-    padding-bottom: 2em;
+
+} 
+
+main ul{
+    padding-left: 2em;
 }
 
 .details{
     padding-left: 20%;
     padding-right: 20%;
     overflow:auto;
+}
+
+.floatleft {
+    float:left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.onethird{
+    float:left;
+    width: 33%;
 }
 
 img {
@@ -140,18 +167,21 @@ img {
     background-image: url("images/road.jpg");
     height: 300px;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #heroguitar{
     background-image: url("images/guitar.jpg");
     height: 300px;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #heromug{
     background-image: url("images/mug.jpg");
     height: 300px;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 
@@ -183,7 +213,7 @@ footer{
 
 /* Configure Medium*/
 
-@media(min-width: 600px){
+@media(min-width: 600px) {
 header {
     padding-left: 0;
     text-align: center;
@@ -241,7 +271,7 @@ h4{
 }
 
 /*grande*/
-@media(min-width: 1034px){
+@media(min-width: 1024px){
     @supports(display:grid){
         header{
             grid-area: header;
